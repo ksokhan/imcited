@@ -22,15 +22,15 @@ var notifoMiddleware = require('connect-notifo');
 var DummyHelper = require('./lib/dummy-helper');
 
 // Session store
-var RedisStore = require('connect-redis')(express);
-var sessionStore = new RedisStore;
+//var RedisStore = require('connect-redis')(express);
+//var sessionStore = new RedisStore;
 
 var app = module.exports = express.createServer();
 app.listen(siteConf.port, null);
 
 // Setup socket.io server
-var socketIo = new require('./lib/socket-io-server.js')(app, sessionStore);
-var authentication = new require('./lib/authentication.js')(app, siteConf);
+//var socketIo = new require('./lib/socket-io-server.js')(app, sessionStore);
+//var authentication = new require('./lib/authentication.js')(app, siteConf);
 // Setup groups for CSS / JS assets
 var assetsSettings = {
 	'js': {
@@ -81,14 +81,14 @@ var assetsSettings = {
 
 // Add auto reload for CSS/JS/templates when in development
 app.configure('development', function(){
-        assetsSettings.js.files.push('jquery.frontend-development.js');
+        /*assetsSettings.js.files.push('jquery.frontend-development.js');
         assetsSettings.css.files.push('frontend-development.css');
 	[['js', 'updatedContent'], ['css', 'updatedCss']].forEach(function(group) {
 		assetsSettings[group[0]].postManipulate['^'].push(function triggerUpdate(file, path, index, isLast, callback) {
 			callback(file);
 			dummyHelpers[group[1]]();
 		});
-	});
+	});*/
 });
 
 var assetsMiddleware = assetManager(assetsSettings);
@@ -104,13 +104,13 @@ app.configure(function() {
 	app.use(express.bodyParser());
 	app.use(express.cookieParser());
 	app.use(assetsMiddleware);
-	app.use(express.session({
+	/*app.use(express.session({
 		'store': sessionStore
 		, 'secret': siteConf.sessionSecret
-	}));
+	}));*/
 	app.use(express.logger({format: ':response-time ms - :date - :req[x-real-ip] - :method :url :user-agent / :referrer'}));
-	app.use(authentication.middleware.auth());
-	app.use(authentication.middleware.normalizeUserData());
+	//app.use(authentication.middleware.auth());
+	//app.use(authentication.middleware.normalizeUserData());
 	app.use(express['static'](__dirname+'/public', {maxAge: 86400000}));
 	app.use(express['static'](__dirname+'/views/frontend_templates'));
 
