@@ -38,9 +38,12 @@ var assetsSettings = {
 		, 'path': './public/js/'
 		, 'dataType': 'javascript'
 		, 'files': [
-			'http://code.jquery.com/jquery-latest.js'
-			, siteConf.uri+'/socket.io/socket.io.js' // special case since the socket.io module serves its own js
-			, 'jquery.client.js'
+			'http://code.jquery.com/jquery.min.js'
+			//, siteConf.uri+'/socket.io/socket.io.js' // special case since the socket.io module serves its own js
+			, 'plugins.js'
+			, 'ejs/ejs_production.js'
+			, 'client.js'
+
 		]
 		, 'debug': true
 		, 'postManipulate': {
@@ -51,30 +54,35 @@ var assetsSettings = {
 				}
 			]
 		}
-	}
-	, 'css': {
+	},
+        'css': {
 		'route': /\/static\/css\/[a-z0-9]+\/.*\.css/
 		, 'path': './public/css/'
 		, 'dataType': 'css'
-		, 'files': [
-			'reset.css'
-			, 'client.css'
-		]
+		, 'files': ['bootstrap.less']
 		, 'debug': true
-		, 'postManipulate': {
-			'^': [
-				assetHandler.fixVendorPrefixes
-				, assetHandler.fixGradients
-				, assetHandler.replaceImageRefToBase64(__dirname+'/public')
-				, assetHandler.yuiCssOptimize
-			]
-		}
+                , 'preManipulate': {
+                    '^': [
+                      assetHandler.lessCompile // CUSTOM HANDLER written by me :)
+                    ]
+
+                }
+                , 'postManipulate': {
+                        '^': [
+                            assetHandler.fixVendorPrefixes
+			    , assetHandler.fixGradients
+		            , assetHandler.replaceImageRefToBase64(__dirname+'/public')
+			    , assetHandler.yuiCssOptimize
+                        ]
+                }
 	}
 };
+
+
 // Add auto reload for CSS/JS/templates when in development
 app.configure('development', function(){
-	assetsSettings.js.files.push('jquery.frontend-development.js');
-	assetsSettings.css.files.push('frontend-development.css');
+        assetsSettings.js.files.push('jquery.frontend-development.js');
+        assetsSettings.css.files.push('frontend-development.css');
 	[['js', 'updatedContent'], ['css', 'updatedCss']].forEach(function(group) {
 		assetsSettings[group[0]].postManipulate['^'].push(function triggerUpdate(file, path, index, isLast, callback) {
 			callback(file);
@@ -104,6 +112,7 @@ app.configure(function() {
 	app.use(authentication.middleware.auth());
 	app.use(authentication.middleware.normalizeUserData());
 	app.use(express['static'](__dirname+'/public', {maxAge: 86400000}));
+	app.use(express['static'](__dirname+'/views/frontend_templates'));
 
 	// Send notification to computer/phone @ visit. Good to use for specific events or low traffic sites.
 	if (siteConf.notifoAuth) {
