@@ -107,7 +107,7 @@ app.configure(function() {
 
 	// Send notification to computer/phone @ visit. Good to use for specific events or low traffic sites.
 	if (siteConf.notifoAuth) {
-		app.use(notifoMiddleware(siteConf.notifoAuth, { 
+		app.use(notifoMiddleware(siteConf.notifoAuth, {
 			'filter': function(req, res, callback) {
 				callback(null, (!req.xhr && !(req.headers['x-real-ip'] || req.connection.remoteAddress).match(/192.168./)));
 			}
