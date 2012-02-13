@@ -79,17 +79,16 @@ var assetsSettings = {
 	}
 };
 
-
 // Add auto reload for CSS/JS/templates when in development
 app.configure('development', function(){
-        assetsSettings.js.files.push('jquery.frontend-development.js');
-        assetsSettings.css.files.push('frontend-development.css');
-	[['js', 'updatedContent'], ['css', 'updatedCss']].forEach(function(group) {
+        //assetsSettings.js.files.push('jquery.frontend-development.js');
+        //assetsSettings.css.files.push('frontend-development.css');
+	/*[['js', 'updatedContent'], ['css', 'updatedCss']].forEach(function(group) {
 		assetsSettings[group[0]].postManipulate['^'].push(function triggerUpdate(file, path, index, isLast, callback) {
 			callback(file);
 			dummyHelpers[group[1]]();
 		});
-	});
+	});*/
 });
 
 var assetsMiddleware = assetManager(assetsSettings);

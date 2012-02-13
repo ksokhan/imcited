@@ -1,7 +1,7 @@
 var settings = {
 	'sessionSecret': 'sessionSecret'
 	, 'port': 3003
-	, 'uri': 'http://localhost:8080' // Without trailing /
+	, 'uri': 'http://imcited.ksokhan.com' // Without trailing /
 
 	// You can add multiple recipiants for notifo notifications
 	, 'notifoAuth': null /*[
@@ -32,8 +32,8 @@ var settings = {
 };
 
 if (process.env.NODE_ENV == 'production') {
-	settings.uri = 'http://kostia.no.de';
-	settings.port = process.env.PORT || 80; // Joyent SmartMachine uses process.env.PORT
+	settings.uri = 'http://imcited.ksokhan.com';
+	settings.port = process.env.PORT || 3003; // Joyent SmartMachine uses process.env.PORT
 
 	//settings.airbrakeApiKey = '0190e64f92da110c69673b244c862709'; // Error logging, Get free API key from https://airbrakeapp.com/account/new/Free
 }
