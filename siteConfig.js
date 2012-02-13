@@ -1,6 +1,6 @@
 var settings = {
 	'sessionSecret': 'sessionSecret'
-	, 'port': 8080
+	, 'port': 3003
 	, 'uri': 'http://localhost:8080' // Without trailing /
 
 	// You can add multiple recipiants for notifo notifications
