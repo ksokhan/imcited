@@ -112,7 +112,7 @@ app.configure(function() {
 	app.use(authentication.middleware.auth());
 	app.use(authentication.middleware.normalizeUserData());
 	app.use(express['static'](__dirname+'/public', {maxAge: 86400000}));
-	app.use(express['static'](__dirname+'/views/frontend_templates'));
+	//app.use(express['static'](__dirname+'/views/frontend_templates'));
 
 	// Send notification to computer/phone @ visit. Good to use for specific events or low traffic sites.
 	if (siteConf.notifoAuth) {
@@ -185,9 +185,19 @@ app.all('/', function(req, res) {
 		req.session.uid = (0 | Math.random()*1000000);
 	}
 	res.locals({
-		'key': 'value'
+		'page': 'index'
 	});
 	res.render('index');
+});
+app.all('/cite/:pg', function(req, res) {
+	// Set example session uid for use with socket.io.
+	if (!req.session.uid) {
+		req.session.uid = (0 | Math.random()*1000000);
+	}
+	res.locals({
+		'page': req.params.pg
+	});
+	res.render('cite/' + req.params.pg);
 });
 
 // Initiate this after all other routing is done, otherwise wildcard will go crazy.

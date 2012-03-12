@@ -1,42 +1,116 @@
+// Vars
+@sans: "Junction Regular", Sans-serif;
+@lgrey: #c0c0c0;
+
+
 // main theme
 html {
+    background: url(/img/top-bg.jpg) top center repeat-x;
 }
 
 body {
     margin: 0 auto;
     width: 940px;
+    background: transparent;
 }
 
 header {
-    padding: 20px 0 40px 0;
+    padding: 25px 0 20px 0;
     font-size: 1.2em;
+
     h1 {
         font-size: 1em;
-        display: inline;
+        display: inline-block;
+		text-indent: -999em;
+		background: url(/img/imcited.png) top left no-repeat;
+		min-width: 106px;
+		height: 21px;
+		margin-left: 18px;
     }
 }
 
-.searchBox {
-    text-align: center;
-    .textfield{
-        width: 500px;
+h5 {
+	color: #999;
+	margin-bottom: 10px;
+
+}
+
+.quoteBox {
+	border-top: solid 1px #ddd;
+	border-bottom: solid 1px #ddd;
+	padding: 10px 0;
+
+	form { margin-bottom: 0; }
+
+    #quoteboxText{
+    	min-height: 1.5em;
+    	padding: 20px 0;
+    	font-family: @sans;
+    	font-size: 1.5em;
+    	line-height: 130%;
+    	color: #333;
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	    outline: none;
+
+	    &.active {
+	    	background: #ffc;
+	    	border: 0 none;
+	    	.box-shadow(0 none);
+	    }
     }
+
     .btn {
-
+    	width: 100%;
+    	padding-left: 8px;
     }
 }
+
+/*
+ * Search results page
+ *
+ */
 
 #search_results {
-    margin-top: 40px;
+    margin-top: 0px;
 
-    li {
-        list-style: roman;
-        display: block;
+    ol {
+	margin-left: 0;
 
-        border-top: solid 1px #ccc;
-        margin: 20px 0;
-        padding-left: 20px;
-        padding-top: 20px;
+	&>li {
+	    list-style: roman;
+	    display: block;
+	    border-top: solid 1px #ddd;
+	    margin: 0px 0 20px;
+	    padding-left: 0px;
+	    padding-top: 20px;
+
+	    p, h3 {
+		font: normal 1.15em/1.7em Helvetica, Arial, Sans-serif;
+		color: #444;
+	    }
+
+	    ul {
+		list-style: none;
+
+		em {
+		    color: @lgrey;
+		    width: 60px;
+		    display: inline-block;
+		    text-indent: 5px;
+		    font-size: 0.8em;
+		}
+		li {
+		    font-size: 1.15em;
+		    line-height: 1.7em;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+
+		}
+	    }
+	}
 
     }
 

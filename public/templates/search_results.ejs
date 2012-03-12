@@ -1,0 +1,20 @@
+<%  if (results != undefined) { %>
+    <ol>
+  <%  for(var i=0; i<results.length; i++) { %>
+	<li>
+	    <div class="row">
+		<div class="span8">
+		    <p><%= results[i].htmlSnippet.replace(/\u003cbr\u003e/g, '') %></p>
+		</div>
+		<div class="span4">
+		    <ul>
+		    	<li><em>title</em> <%= results[i].htmlTitle %></li>
+		    	<li><em>source</em> <a href="<%= results[i].link %>"><%= results[i].displayLink %></a></li>
+    		    </ul>
+	    </div>
+        </li>
+  <%  } %>
+    </ol>
+<%  } else { %>
+    <p style="text-align: center">No results found!</p>
+<%}%>
