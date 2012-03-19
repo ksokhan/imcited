@@ -1,0 +1,546 @@
+{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+ },
+ "queries": {
+  "nextPage": [
+   {
+    "title": "Google Custom Search - The BP oil spill is bad that's not bad!",
+    "totalResults": "1080000",
+    "searchTerms": "The BP oil spill is bad that's not bad!",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "001971603169725994744:mgvhepgw6oc"
+   }
+  ],
+  "request": [
+   {
+    "title": "Google Custom Search - The BP oil spill is bad that's not bad!",
+    "totalResults": "1080000",
+    "searchTerms": "The BP oil spill is bad that's not bad!",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "001971603169725994744:mgvhepgw6oc"
+   }
+  ]
+ },
+ "context": {
+  "title": "imcited"
+ },
+ "searchInformation": {
+  "searchTime": 0.255478,
+  "formattedSearchTime": "0.26",
+  "totalResults": "1080000",
+  "formattedTotalResults": "1,080,000"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "BP Oil Spill: How Bad Is Damage to Gulf One Year Later? - TIME",
+   "htmlTitle": "\u003cb\u003eBP Oil Spill\u003c/b\u003e: How \u003cb\u003eBad\u003c/b\u003e Is Damage to Gulf One Year Later? - TIME",
+   "link": "http://www.time.com/time/health/article/0,8599,2066031,00.html",
+   "displayLink": "www.time.com",
+   "snippet": "Apr 19, 2011 ... The Gulf oil spill wasn't as bad as many environmentalists feared, but the ... It's   not that the oil spill had no lasting effects — far from it — but the ...",
+   "htmlSnippet": "Apr 19, 2011 \u003cb\u003e...\u003c/b\u003e The Gulf \u003cb\u003eoil spill\u003c/b\u003e wasn&#39;t as \u003cb\u003ebad\u003c/b\u003e as many environmentalists feared, but the \u003cb\u003e...\u003c/b\u003e It&#39;s \u003cbr\u003e  \u003cb\u003enot that\u003c/b\u003e the \u003cb\u003eoil spill\u003c/b\u003e had no lasting effects — far from it — but the \u003cb\u003e...\u003c/b\u003e",
+   "formattedUrl": "www.time.com/time/health/article/0,8599,2066031,00.html",
+   "htmlFormattedUrl": "www.time.com/time/health/article/0,8599,2066031,00.html",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://img.timeinc.net/time/daily/2011/1104/ecology_gulf_0418.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "245",
+      "height": "160",
+      "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcRncqluNyeuepFMkm4YeZyc6KSUKmQedFVNcsZ70zeUZ63bJMttyHc6D9k"
+     }
+    ],
+    "article": [
+     {
+      "site_name": "TIME.com",
+      "type": "article",
+      "title": "The BP Oil Spill, One Year Later: How Healthy Is the Gulf Now?",
+      "url": "http://www.time.com/time/health/article/0,8599,2066031,00.html?xid=fblike",
+      "image": "http://img.timeinc.net/time/daily/2011/1104/ecology_gulf_0418.jpg"
+     }
+    ],
+    "metatags": [
+     {
+      "byline": "Bryan Walsh",
+      "srce": "/time Magazine",
+      "head": "The BP Oil Spill, One Year Later: How Healthy Is the Gulf Now?",
+      "path": "/time/health/article/0,8599,2066031,00.html",
+      "date": "Tuesday, Apr. 19, 2011",
+      "word_count": "1197",
+      "object_type": "website",
+      "fb_admins": "1124331582,500054654,220400,512158401,808970553,1502271052,695398126,100000018008769",
+      "og:site_name": "TIME.com",
+      "og:type": "article",
+      "og:title": "The BP Oil Spill, One Year Later: How Healthy Is the Gulf Now?",
+      "og:url": "http://www.time.com/time/health/article/0,8599,2066031,00.html?xid=fblike",
+      "og:image": "http://img.timeinc.net/time/daily/2011/1104/ecology_gulf_0418.jpg",
+      "fb:admins": "1124331582,500054654,220400,512158401,808970553,1502271052,695398126,100000018008769"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "News Analysis - Gulf Oil Spill Is Bad, but How Bad? - NYTimes.com",
+   "htmlTitle": "News Analysis - Gulf \u003cb\u003eOil Spill Is Bad\u003c/b\u003e, but How \u003cb\u003eBad\u003c/b\u003e? - NYTimes.com",
+   "link": "http://www.nytimes.com/2010/05/04/us/04enviro.html",
+   "displayLink": "www.nytimes.com",
+   "snippet": "May 3, 2010 ... WASHINGTON — The oil spill in the Gulf of Mexico is bad — no one would   dispute it. ... Yet the Deepwater Horizon blowout is not unprecedented, nor is it   yet ... Dr. Overton said he was hopeful that efforts by BP to place ...",
+   "htmlSnippet": "May 3, 2010 \u003cb\u003e...\u003c/b\u003e WASHINGTON — The \u003cb\u003eoil spill\u003c/b\u003e in the Gulf of Mexico is \u003cb\u003ebad\u003c/b\u003e — no one would \u003cbr\u003e  dispute it. \u003cb\u003e...\u003c/b\u003e Yet the Deepwater Horizon blowout is \u003cb\u003enot\u003c/b\u003e unprecedented, nor is it \u003cbr\u003e  yet \u003cb\u003e...\u003c/b\u003e Dr. Overton said he was hopeful \u003cb\u003ethat\u003c/b\u003e efforts by \u003cb\u003eBP\u003c/b\u003e to place \u003cb\u003e...\u003c/b\u003e",
+   "formattedUrl": "www.nytimes.com/2010/05/04/us/04enviro.html",
+   "htmlFormattedUrl": "www.nytimes.com/2010/05/04/us/04enviro.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "displaydate": "May 3, 2010",
+      "hdl": "Gulf Oil Spill Is Bad, but How Bad?",
+      "byl": "By JOHN M. BRODER and TOM ZELLER Jr.",
+      "lp": "It is far too soon to gauge the impact of the Deepwater Horizon spill on either the environment or the economy.",
+      "cre": "The New York Times",
+      "edt": "NewYork",
+      "pdate": "20100503",
+      "des": "Oil (Petroleum) and Gasoline",
+      "org": "BP Plc",
+      "geo": "Gulf of Mexico",
+      "ticker": "BP Plc|BP|NYSE",
+      "dat": "May 3, 2010",
+      "tom": "News Analysis",
+      "col": "News Analysis",
+      "dsk": "U.S.",
+      "articleid": "1247467767000",
+      "article_template_version": "700",
+      "hdr_img": "/images/article/header/sect_us.gif",
+      "sectionfront_jsonp": "http://json8.nytimes.com/pages/national/index.jsonp",
+      "cg": "us",
+      "pt": "Article",
+      "pst": "News Analysis",
+      "og:url": "http://www.nytimes.com/2010/05/04/us/04enviro.html"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "BP Oil Spill: Has Environmental Damage Been Exaggerated? - TIME",
+   "htmlTitle": "\u003cb\u003eBP Oil Spill\u003c/b\u003e: Has Environmental Damage Been Exaggerated? - TIME",
+   "link": "http://www.time.com/time/magazine/article/0,9171,2007428,00.html",
+   "displayLink": "www.time.com",
+   "snippet": "Jul 29, 2010 ... The BP Spill: Has the Damage Been Exaggerated? ... for an underwater event   that took place just three months ago — it does not seem to be ... helped   convince me that the conventional wisdom about a big story was wrong.",
+   "htmlSnippet": "Jul 29, 2010 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eThe BP Spill\u003c/b\u003e: Has the Damage Been Exaggerated? \u003cb\u003e...\u003c/b\u003e for an underwater event \u003cbr\u003e  \u003cb\u003ethat\u003c/b\u003e took place just three months ago — it does \u003cb\u003enot\u003c/b\u003e seem to be \u003cb\u003e...\u003c/b\u003e helped \u003cbr\u003e  convince me \u003cb\u003ethat\u003c/b\u003e the conventional wisdom about a big story was \u003cb\u003ewrong\u003c/b\u003e.",
+   "formattedUrl": "www.time.com/time/magazine/article/0,9171,2007428,00.html",
+   "htmlFormattedUrl": "www.time.com/time/magazine/article/0,9171,2007428,00.html",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://img.timeinc.net/time/daily/2010/1007/oil_effects_0727.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "271",
+      "height": "186",
+      "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcT8F_O6t8y5x2o8XSSbB3cvn-I_83QZWnm1JBQhX_7uS2JJhKpdmHO5aAZS"
+     }
+    ],
+    "article": [
+     {
+      "site_name": "TIME.com",
+      "type": "article",
+      "title": "The BP Spill: Has the Damage Been Exaggerated?",
+      "url": "http://www.time.com/time/magazine/article/0,9171,2007428,00.html?xid=fblike",
+      "image": "http://img.timeinc.net/time/daily/2010/1007/oil_effects_0727.jpg"
+     }
+    ],
+    "metatags": [
+     {
+      "byline": "Michael Grunwald",
+      "srce": "/time Magazine",
+      "head": "The BP Spill: Has the Damage Been Exaggerated?",
+      "path": "/time/magazine/article/0,9171,2007428,00.html",
+      "date": "Thursday, July 29, 2010",
+      "word_count": "1768",
+      "object_type": "website",
+      "fb_admins": "1124331582,500054654,220400,512158401,808970553,1502271052,695398126,100000018008769",
+      "og:site_name": "TIME.com",
+      "og:type": "article",
+      "og:title": "The BP Spill: Has the Damage Been Exaggerated?",
+      "og:url": "http://www.time.com/time/magazine/article/0,9171,2007428,00.html?xid=fblike",
+      "og:image": "http://img.timeinc.net/time/daily/2010/1007/oil_effects_0727.jpg",
+      "fb:admins": "1124331582,500054654,220400,512158401,808970553,1502271052,695398126,100000018008769"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "How bad could BP oil spill get for the Gulf and the nation ...",
+   "htmlTitle": "How \u003cb\u003ebad\u003c/b\u003e could \u003cb\u003eBP oil spill\u003c/b\u003e get for the Gulf and the nation \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://www.usatoday.com/tech/science/environment/2010-06-09-1Aoilhowbad09_CV_N.htm",
+   "displayLink": "www.usatoday.com",
+   "snippet": "Jun 8, 2010 ... How bad could BP oil spill get for the Gulf and the nation? .... Much of the oil that   has floated to the surface now is caught in the Gulf of ... The formation of tar balls   may not sound like a best-case anything, but it would be.",
+   "htmlSnippet": "Jun 8, 2010 \u003cb\u003e...\u003c/b\u003e How \u003cb\u003ebad\u003c/b\u003e could \u003cb\u003eBP oil spill\u003c/b\u003e get for the Gulf and the nation? \u003cb\u003e....\u003c/b\u003e Much of the oil \u003cb\u003ethat\u003c/b\u003e \u003cbr\u003e  has floated to the surface now is caught in the Gulf of \u003cb\u003e...\u003c/b\u003e The formation of tar balls \u003cbr\u003e  may \u003cb\u003enot\u003c/b\u003e sound like a best-case anything, but it would be.",
+   "cacheId": "SZ07OIRs404J",
+   "formattedUrl": "www.usatoday.com/tech/.../2010-06-09-1Aoilhowbad09_CV_N.htm",
+   "htmlFormattedUrl": "www.usatoday.com/tech/.../2010-06-09-1A\u003cb\u003eoil\u003c/b\u003ehow\u003cb\u003ebad\u003c/b\u003e09_CV_N.htm",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://i.usatoday.net/news/_photos/2010/06/09/oilx.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "196",
+      "height": "137",
+      "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcRN9myR1fMJBNdm2zIvdvIXUy_vBNovtoAMDeTbNkOz8pDRUqC6ECsBfEFZ"
+     }
+    ],
+    "metatags": [
+     {
+      "pubdate": "Jun 09, 2010",
+      "pubtime": "01:59 AM",
+      "pubdatetime": "6/9/2010 1:58 AM"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Experts: Oil spill is the 'bad one' they feared - Technology & science ...",
+   "htmlTitle": "Experts: \u003cb\u003eOil spill\u003c/b\u003e is the &#39;\u003cb\u003ebad\u003c/b\u003e one&#39; they feared - Technology &amp; science \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://www.msnbc.msn.com/id/36878803/ns/technology_and_science-science/t/oil-spill-bad-one-experts-feared/",
+   "displayLink": "www.msnbc.msn.com",
+   "snippet": "Apr 30, 2010 ... The only thing that's not bad about this is that it doesn't have a lot of sulfur in it   and the high sulfur really smells bad.\" The first analysis of oil spill ...",
+   "htmlSnippet": "Apr 30, 2010 \u003cb\u003e...\u003c/b\u003e The only thing \u003cb\u003ethat&#39;s not bad\u003c/b\u003e about this is that it doesn&#39;t have a lot of sulfur in it \u003cbr\u003e  and the high sulfur really smells \u003cb\u003ebad\u003c/b\u003e.&quot; The first analysis of \u003cb\u003eoil spill\u003c/b\u003e \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "0hP4mN5ImqIJ",
+   "formattedUrl": "www.msnbc.msn.com/id/.../ns/.../oil-spill-bad-one-experts-feared/",
+   "htmlFormattedUrl": "www.msnbc.msn.com/id/.../ns/.../\u003cb\u003eoil\u003c/b\u003e-\u003cb\u003espill\u003c/b\u003e-\u003cb\u003ebad\u003c/b\u003e-one-experts-feared/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://msnbcmedia4.msn.com/j/MSNBC/Components/Photo/_new/100430-oil-hmed-3p.grid-6x2.jpg"
+     }
+    ],
+    "person": [
+     {
+      "affiliation": "AP file"
+     },
+     {
+      "name": "Seth Borenstein"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "278",
+      "height": "181",
+      "src": "https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcT7ahH88DfGy3wiW5NVU9zc_m4H6fDLaKz5mxe2JW4G8HQMdMvmkzpBNyU"
+     }
+    ],
+    "article": [
+     {
+      "url": "http://www.msnbc.msn.com/id/36878803/ns/technology_and_science-science/t/oil-spill-bad-one-experts-feared/",
+      "title": "Oil spill is the ‘bad one’ experts feared",
+      "site_name": "msnbc.com",
+      "type": "article",
+      "image": "http://msnbcmedia2.msn.com/j/MSNBC/Components/Photo/_new/100430-oil-hmed-3p.standard.jpg",
+      "app_id": "10150138890205613",
+      "description": "What makes an oil spill really bad? Most of the ingredients for it are now blending in the Gulf of Mexico.",
+      "created": "2010-04-30T22:21:38",
+      "issued": "2010-04-30T22:21:38",
+      "date": "2010-04-30T22:21:38",
+      "rights": "© 2012 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed."
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width = 1030",
+      "og:url": "http://www.msnbc.msn.com/id/36878803/ns/technology_and_science-science/t/oil-spill-bad-one-experts-feared/",
+      "title": "Experts: Oil spill is the ‘bad one’ they feared - Technology & science - Science - msnbc.com",
+      "og:title": "Oil spill is the ‘bad one’ experts feared",
+      "og:site_name": "msnbc.com",
+      "og:type": "article",
+      "article:author": "http://www.msnbc.msn.com/id/32027560/",
+      "article:section": "Science",
+      "search.image": "/MSNBC/Components/Photo/_new/100430-oil-hmed-3p.jpg",
+      "og:image": "http://msnbcmedia2.msn.com/j/MSNBC/Components/Photo/_new/100430-oil-hmed-3p.standard.jpg",
+      "search.imagesource": "AP file",
+      "fb:app_id": "10150138890205613",
+      "article:modified_time": "2010-04-30T22:21:38",
+      "article:published_time": "2010-04-30T22:21:38",
+      "search.update": "Fri, 30 Apr 2010 22:21:38 GMT"
+     }
+    ],
+    "Person": [
+     {
+      "affiliation": "AP file",
+      "organization-name": "AP file"
+     },
+     {
+      "name": "Seth Borenstein",
+      "fn": "Seth Borenstein"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "BP's clumsy response to oil spill threatens to make a bad situation ...",
+   "htmlTitle": "\u003cb\u003eBP&#39;s\u003c/b\u003e clumsy response to \u003cb\u003eoil spill\u003c/b\u003e threatens to make a \u003cb\u003ebad\u003c/b\u003e situation \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://www.guardian.co.uk/business/2010/jun/01/bp-response-oil-spill-tony-hayward",
+   "displayLink": "www.guardian.co.uk",
+   "snippet": "Jun 1, 2010 ... BP's clumsy response to oil spill threatens to make a bad situation worse ...   briefing journalists that week repeated the line that \"this was not our ...",
+   "htmlSnippet": "Jun 1, 2010 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eBP&#39;s\u003c/b\u003e clumsy response to \u003cb\u003eoil spill\u003c/b\u003e threatens to make a \u003cb\u003ebad\u003c/b\u003e situation worse \u003cb\u003e...\u003c/b\u003e \u003cbr\u003e  briefing journalists \u003cb\u003ethat\u003c/b\u003e week repeated the line \u003cb\u003ethat\u003c/b\u003e &quot;this was \u003cb\u003enot\u003c/b\u003e our \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "Ph4kM5xJF_4J",
+   "formattedUrl": "www.guardian.co.uk/business/.../bp-response-oil-spill-tony-hayward",
+   "htmlFormattedUrl": "www.guardian.co.uk/business/.../\u003cb\u003ebp\u003c/b\u003e-response-\u003cb\u003eoil\u003c/b\u003e-\u003cb\u003espill\u003c/b\u003e-tony-hayward",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2010/6/1/1275428976597/Tony-Hayward-006.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "290",
+      "height": "174",
+      "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQbq53ConPWDf1vljaghBHQDpfTn3m_Gdv7btNyho7Uq0yjKplkyOm-vN8"
+     }
+    ],
+    "article": [
+     {
+      "title": "BP's clumsy response to oil spill threatens to make a bad situation worse",
+      "type": "article",
+      "url": "http://www.guardian.co.uk/business/2010/jun/01/bp-response-oil-spill-tony-hayward",
+      "image": "https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2010/6/1/1275428972969/Tony-Hayward-002.jpg",
+      "site_name": "the Guardian",
+      "description": "Chief executive Tony Hayward's comments have done little to aid attempts at damage limitation"
+     }
+    ],
+    "metatags": [
+     {
+      "dc.date.issued": "2010-06-01",
+      "og:title": "BP's clumsy response to oil spill threatens to make a bad situation worse",
+      "og:type": "article",
+      "article:published_time": "2010-06-01T22:58:13+01:00",
+      "article:modified_time": "2010-06-01T22:59:16+01:00",
+      "article:author": "http://www.guardian.co.uk/profile/timwebb",
+      "article:tag": "BP",
+      "article:section": "Business",
+      "og:url": "http://www.guardian.co.uk/business/2010/jun/01/bp-response-oil-spill-tony-hayward",
+      "og:image": "https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2010/6/1/1275428972969/Tony-Hayward-002.jpg",
+      "og:site_name": "the Guardian",
+      "og:description": "Chief executive Tony Hayward's comments have done little to aid attempts at damage limitation",
+      "fb:app_id": "180444840287"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "BP and golden parachutes: The wages of failure | The Economist",
+   "htmlTitle": "\u003cb\u003eBP\u003c/b\u003e and golden parachutes: The wages of failure | The Economist",
+   "link": "http://www.economist.com/node/16693567",
+   "displayLink": "www.economist.com",
+   "snippet": "Jul 29, 2010 ... And other firms are trying harder not to reward bad leadership ... On his watch,   zillions of gallons of oil spilled into the Gulf of Mexico. ... The financial crisis   revealed that top bankers were fabulously remunerated for doing what ...",
+   "htmlSnippet": "Jul 29, 2010 \u003cb\u003e...\u003c/b\u003e And other firms are trying harder \u003cb\u003enot\u003c/b\u003e to reward \u003cb\u003ebad\u003c/b\u003e leadership \u003cb\u003e...\u003c/b\u003e On his watch, \u003cbr\u003e  zillions of gallons of \u003cb\u003eoil spilled\u003c/b\u003e into the Gulf of Mexico. \u003cb\u003e...\u003c/b\u003e The financial crisis \u003cbr\u003e  revealed \u003cb\u003ethat\u003c/b\u003e top bankers were fabulously remunerated for doing what \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "YxLOWnzH-a8J",
+   "formattedUrl": "www.economist.com/node/16693567",
+   "htmlFormattedUrl": "www.economist.com/node/16693567",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://media.economist.com/sites/default/files/images/articles/migrated/201031wbp001.jpg"
+     }
+    ],
+    "article": [
+     {
+      "site_name": "The Economist",
+      "title": "The wages of failure",
+      "type": "article",
+      "image": "http://media.economist.com/sites/default/files/images/articles/migrated/201031wbp001.jpg",
+      "url": "http://www.economist.com/node/16693567",
+      "description": " That might satisfy the public’s appetite for executive blood. But it is highly unlikely to happen."
+     }
+    ],
+    "metatags": [
+     {
+      "og:site_name": "The Economist",
+      "fb:app_id": "173277756049645",
+      "fb:page_id": "6013004059",
+      "fb:admins": "davehumber, angelorepole",
+      "og:title": "The wages of failure",
+      "og:type": "article",
+      "og:image": "http://media.economist.com/sites/default/files/images/articles/migrated/201031wbp001.jpg",
+      "og:url": "http://www.economist.com/node/16693567",
+      "og:description": "That might satisfy the public’s appetite for executive blood. But it is highly unlikely to happen."
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "BP Wins Bid to Bar Prior Bad Acts From Gulf Oil Spill Trial - Bloomberg",
+   "htmlTitle": "\u003cb\u003eBP\u003c/b\u003e Wins Bid to Bar Prior \u003cb\u003eBad\u003c/b\u003e Acts From Gulf \u003cb\u003eOil Spill\u003c/b\u003e Trial - Bloomberg",
+   "link": "http://www.bloomberg.com/news/2012-02-09/bp-wins-bid-to-keep-prior-penalties-out-of-gulf-oil-spill-trial.html",
+   "displayLink": "www.bloomberg.com",
+   "snippet": "Feb 10, 2012 ... BP Wins Bid to Bar Prior Bad Acts From Gulf Oil Spill Trial ... of expert opinions   regarding the process safety that should have been, but was not, ...",
+   "htmlSnippet": "Feb 10, 2012 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eBP\u003c/b\u003e Wins Bid to Bar Prior \u003cb\u003eBad\u003c/b\u003e Acts From Gulf \u003cb\u003eOil Spill\u003c/b\u003e Trial \u003cb\u003e...\u003c/b\u003e of expert opinions \u003cbr\u003e  regarding the process safety \u003cb\u003ethat\u003c/b\u003e should have been, but was \u003cb\u003enot\u003c/b\u003e, \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "kX2yXff0igQJ",
+   "formattedUrl": "www.bloomberg.com/.../bp-wins-bid-to-keep-prior-penalties-out-of-gulf-oil- spill-trial.html",
+   "htmlFormattedUrl": "www.bloomberg.com/.../\u003cb\u003ebp\u003c/b\u003e-wins-bid-to-keep-prior-penalties-out-of-gulf-\u003cb\u003eoil\u003c/b\u003e- \u003cb\u003espill\u003c/b\u003e-trial.html",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.bloomberg.com/image/iUqCYLR6tF3Q.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "111",
+      "height": "120",
+      "src": "https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcRQYeIu_QS_2NWS1qgcbkOve-kF1vI4bAKQZg77kS2eOkNuvFn5_OHg"
+     }
+    ],
+    "article": [
+     {
+      "title": "BP Wins Bid to Bar Prior Bad Acts From Gulf Oil Spill Trial",
+      "site_name": "Bloomberg",
+      "admins": "1502271052,1617206,500566238,616620419,18776,1396618572,501161086,100001111898866,1223836",
+      "type": "article",
+      "url": "http://www.bloomberg.com/news/2012-02-09/bp-wins-bid-to-keep-prior-penalties-out-of-gulf-oil-spill-trial.html",
+      "image": "http://www.bloomberg.com/image/iUqCYLR6tF3Q.jpg"
+     }
+    ],
+    "metatags": [
+     {
+      "og:title": "BP Wins Bid to Bar Prior Bad Acts From Gulf Oil Spill Trial",
+      "og:site_name": "Bloomberg",
+      "fb:admins": "1502271052,1617206,500566238,616620419,18776,1396618572,501161086,100001111898866,1223836",
+      "category": "Law News, U.S. News, Sustainability, Energy",
+      "og:type": "article",
+      "og:url": "http://www.bloomberg.com/news/2012-02-09/bp-wins-bid-to-keep-prior-penalties-out-of-gulf-oil-spill-trial.html",
+      "og:image": "http://www.bloomberg.com/image/iUqCYLR6tF3Q.jpg"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "BP Decisions Made Well Vulnerable - WSJ.com",
+   "htmlTitle": "\u003cb\u003eBP\u003c/b\u003e Decisions Made Well Vulnerable - WSJ.com",
+   "link": "http://online.wsj.com/article/SB10001424052748704026204575266560930780190.html",
+   "displayLink": "online.wsj.com",
+   "snippet": "May 27, 2010 ... The owner of the oil well that exploded in the Gulf of Mexico April 20 made   certain ... a cement test and not fully circulating drilling fluid, that made controlling   any ... have yet to announce conclusions about what went wrong that day. ....   Topics: The Deepwater Oil Spill ..... “I have some very bad news for yo...;” ...",
+   "htmlSnippet": "May 27, 2010 \u003cb\u003e...\u003c/b\u003e The owner of the oil well \u003cb\u003ethat\u003c/b\u003e exploded in the Gulf of Mexico April 20 made \u003cbr\u003e  certain \u003cb\u003e...\u003c/b\u003e a cement test and \u003cb\u003enot\u003c/b\u003e fully circulating drilling fluid, \u003cb\u003ethat\u003c/b\u003e made controlling \u003cbr\u003e  any \u003cb\u003e...\u003c/b\u003e have yet to announce conclusions about what went \u003cb\u003ewrong that\u003c/b\u003e day. \u003cb\u003e....\u003c/b\u003e \u003cbr\u003e  Topics: The Deepwater \u003cb\u003eOil Spill\u003c/b\u003e \u003cb\u003e.....\u003c/b\u003e “I have some very \u003cb\u003ebad\u003c/b\u003e news for yo...;” \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "zwCZZha87s4J",
+   "formattedUrl": "online.wsj.com/.../SB10001424052748704026204575266560930780190. html",
+   "htmlFormattedUrl": "online.wsj.com/.../SB10001424052748704026204575266560930780190. html",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://si.wsj.net/public/resources/images/P1-AV431_WellJm_G_20100526180335.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "275",
+      "height": "183",
+      "src": "https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcR6quYiWxUupwKWtk0e6vixNmMojsj6bN4-0vuA8Bqfl05kuL97i6nfVF4"
+     }
+    ],
+    "article": [
+     {
+      "url": "http://online.wsj.com/article/SB10001424052748704026204575266560930780190.html",
+      "description": "The owner of the oil well that exploded in the Gulf of Mexico April 20 made certain technical moves, such as skipping a cement test and not fully circulating drilling fluid, that made controlling...",
+      "image": "http://s.wsj.net/public/resources/images/P1-AV437_Oil_A_20100526221155.jpg",
+      "title": "BP Decisions Set Stage for Disaster",
+      "app_id": "368513495882",
+      "type": "article"
+     }
+    ],
+    "metatags": [
+     {
+      "og:url": "http://online.wsj.com/article/SB10001424052748704026204575266560930780190.html",
+      "sitedomain": "online.wsj.com",
+      "primaryproduct": "Online Journal",
+      "ctype": "article",
+      "subsection": "Business",
+      "displayname": "Business",
+      "pagename": "Business_SB10001424052748704026204575266560930780190",
+      "og:description": "The owner of the oil well that exploded in the Gulf of Mexico April 20 made certain technical moves, such as skipping a cement test and not fully circulating drilling fluid, that made controlling any natural-gas seepage more of a challenge, a Wall Street Journal investigation shows.",
+      "csource": "WSJ Online",
+      "section": "Article",
+      "og:image": "http://s.wsj.net/public/resources/images/P1-AV437_Oil_A_20100526221155.jpg",
+      "og:title": "BP Decisions Set Stage for Disaster",
+      "fb:app_id": "368513495882",
+      "og:type": "article",
+      "msapplication-task": "name=MarketWatch;action-uri=http://www.marketwatch.com/;icon-uri=http://www.marketwatch.com/favicon.ico"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Updated spill stats bad news for BP, nature - Washington Times",
+   "htmlTitle": "Updated \u003cb\u003espill\u003c/b\u003e stats \u003cb\u003ebad\u003c/b\u003e news for \u003cb\u003eBP\u003c/b\u003e, nature - Washington Times",
+   "link": "http://www.washingtontimes.com/news/2010/jun/12/new-oil-spill-stats-are-bad-news-bp-wildlife/?page=all",
+   "displayLink": "www.washingtontimes.com",
+   "snippet": "Jun 12, 2010 ... I don't know how to judge that, but that much more oil could not be good at ... That   the BP oil spill may be twice as bad as earlier estimates was ...",
+   "htmlSnippet": "Jun 12, 2010 \u003cb\u003e...\u003c/b\u003e I don&#39;t know how to judge \u003cb\u003ethat\u003c/b\u003e, but \u003cb\u003ethat\u003c/b\u003e much more oil could \u003cb\u003enot\u003c/b\u003e be good at \u003cb\u003e...\u003c/b\u003e \u003cb\u003eThat\u003c/b\u003e \u003cbr\u003e  \u003cb\u003ethe BP oil spill\u003c/b\u003e may be twice as \u003cb\u003ebad\u003c/b\u003e as earlier estimates was \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "edFV8OQJEuQJ",
+   "formattedUrl": "www.washingtontimes.com/.../new-oil-spill-stats-are-bad-news-bp-wildlife/? ...",
+   "htmlFormattedUrl": "www.washingtontimes.com/.../new-\u003cb\u003eoil\u003c/b\u003e-\u003cb\u003espill\u003c/b\u003e-stats-are-\u003cb\u003ebad\u003c/b\u003e-news-\u003cb\u003ebp\u003c/b\u003e-wildlife/? ...",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://media.washtimes.com/media/image/2010/06/12/Gulf_Oil_SpillJune11_s640x383.jpg?e02e125f46b631151f6716dad85ae36e092b0f46"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "290",
+      "height": "174",
+      "src": "https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQ43RUxgh9z6g1eSo6RgTYoDuK198EPJFqIo5lVmZVjcX7aTXGV3uyHLoQ"
+     }
+    ],
+    "article": [
+     {
+      "title": "Updated spill stats bad news for BP, nature",
+      "type": "article",
+      "url": "http://www.washingtontimes.com/news/2010/jun/12/new-oil-spill-stats-are-bad-news-bp-wildlife/",
+      "site_name": "The Washingtion Times",
+      "description": "The astonishing news that the oil leak at the bottom of the sea may be twice as big as previously thought could have major repercussions for both the environment and BP’s financial health,..."
+     }
+    ],
+    "metatags": [
+     {
+      "bitly-verification": "d180fd45f70d",
+      "msvalidate.01": "5B44585918D69318CA2120B5FA20D85C",
+      "serverf": "www4",
+      "author": "Brian Skoloff and Harry R. Weber,",
+      "og:title": "Updated spill stats bad news for BP, nature",
+      "og:type": "article",
+      "og:url": "http://www.washingtontimes.com/news/2010/jun/12/new-oil-spill-stats-are-bad-news-bp-wildlife/",
+      "og:site_name": "The Washingtion Times",
+      "og:description": "The astonishing news that the oil leak at the bottom of the sea may be twice as big as previously thought could have major repercussions for both the environment and BP’s financial health, killing more marine life and dramatically increasing the amount the company must pay in fines and damages."
+     }
+    ]
+   }
+  }
+ ]
+}

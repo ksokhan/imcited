@@ -19,18 +19,20 @@ var express = require('express');
 var assetManager = require('connect-assetmanager');
 var assetHandler = require('connect-assetmanager-handlers');
 var notifoMiddleware = require('connect-notifo');
-var DummyHelper = require('./lib/dummy-helper');
+//var DummyHelper = require('./lib/dummy-helper');
+var request = require('request'),
+	mongo = require('mongoskin');
 
-// Session store
-var RedisStore = require('connect-redis')(express);
-var sessionStore = new RedisStore;
+db = mongo.db('localhost:27017/imcited');
+citations = db.collection('citations');
+
 
 var app = module.exports = express.createServer();
 app.listen(siteConf.port, null);
 
 // Setup socket.io server
-var socketIo = new require('./lib/socket-io-server.js')(app, sessionStore);
-var authentication = new require('./lib/authentication.js')(app, siteConf);
+//var socketIo = new require('./lib/socket-io-server.js')(app, sessionStore);
+//var authentication = new require('./lib/authentication.js')(app, siteConf);
 
 // Setup groups for CSS / JS assets
 var assetsSettings = {
@@ -50,9 +52,9 @@ var assetsSettings = {
 		, 'postManipulate': {
 			'^': [
 				assetHandler.uglifyJsOptimize
-				, function insertSocketIoPort(file, path, index, isLast, callback) {
+				/*function insertSocketIoPort(file, path, index, isLast, callback) {
 					callback(file.replace(/.#socketIoPort#./, siteConf.port));
-				}
+				}*/
 			]
 		}
 	},
@@ -104,13 +106,13 @@ app.configure(function() {
 	app.use(express.bodyParser());
 	app.use(express.cookieParser());
 	app.use(assetsMiddleware);
-	app.use(express.session({
+	/*app.use(express.session({
 		'store': sessionStore
 		, 'secret': siteConf.sessionSecret
-	}));
+	}));*/
 	app.use(express.logger({format: ':response-time ms - :date - :req[x-real-ip] - :method :url :user-agent / :referrer'}));
-	app.use(authentication.middleware.auth());
-	app.use(authentication.middleware.normalizeUserData());
+	/*app.use(authentication.middleware.auth());
+	app.use(authentication.middleware.normalizeUserData());*/
 	app.use(express['static'](__dirname+'/public', {maxAge: 86400000}));
 	//app.use(express['static'](__dirname+'/views/frontend_templates'));
 
@@ -179,29 +181,79 @@ function NotFound(msg){
 }
 
 // Routing
+/*
+app.all('/get-citation', function(req, res) {
+	var postData = req.body;
+	postData.key = '32e68b0a1a6cdb014b909b4d2b51f752';
+
+	request({
+		url: 'http://api-easybib.apigee.com/2.0/rest/cite',
+		method: "PUT",
+		body: JSON.stringify(postData),
+	}, function (error, response, body) {
+	  if (!error && response.statusCode == 200) {
+	    res.send(body);
+	  } else {
+		res.send('error: '  + error);
+	  }
+	});
+});*/
+
 app.all('/', function(req, res) {
-	// Set example session uid for use with socket.io.
-	if (!req.session.uid) {
-		req.session.uid = (0 | Math.random()*1000000);
-	}
+
 	res.locals({
 		'page': 'index'
 	});
 	res.render('index');
 });
-app.all('/cite/:pg', function(req, res) {
-	// Set example session uid for use with socket.io.
-	if (!req.session.uid) {
-		req.session.uid = (0 | Math.random()*1000000);
+
+app.post('/cite/publish', function(req, res) {
+	var postData = req.body;
+
+	function generateURL() {
+		var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+		var string_length = 5;
+		var randomstring = '';
+		for (var i=0; i<string_length; i++) {
+			var rnum = Math.floor(Math.random() * chars.length);
+			randomstring += chars.substring(rnum,rnum+1);
+		}
+		return randomstring;
+		/*citations.find({ 'url': randomstring}, function(err, cursor) {
+			console.log(cursor);
+		});*/
 	}
-	res.locals({
-		'page': req.params.pg
+	postData.url = generateURL();
+
+	citations.save(postData, { upsert: true }, function() {
+		var s = {status: "ok", url: postData.url};
+		res.json(s);
 	});
-	res.render('cite/' + req.params.pg);
+	//res.redirect('cite/' + asd);
+});
+
+app.all('/c/:el', function(req,res) {
+	citations.find({url: req.params.el}).limit(1).each(function(err, dat) {
+		res.locals({
+			'results': dat.citations,
+			'statement': dat.statement,
+			'url': dat.url
+		});
+		res.render('c/index.ejs');
+	});
+});
+
+app.all('/cite/:pg', function(req, res) {
+	// this isnt working... fix later
+	var loc = req.params.pg || 'home';
+	res.locals({
+		'page': loc
+	});
+	res.render('cite/' + loc);
 });
 
 // Initiate this after all other routing is done, otherwise wildcard will go crazy.
-var dummyHelpers = new DummyHelper(app);
+//var dummyHelpers = new DummyHelper(app);
 
 // If all fails, hit em with the 404
 app.all('*', function(req, res){

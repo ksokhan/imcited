@@ -1,0 +1,28 @@
+<div id="citations" class="citationsHolder">
+<%  if (results != undefined && results.length > 0) { %>
+<p style="margin-top: 20px"><span class="citationNum"><%= results.length %></span> Sources <a href="/c/<%= url %>" style="float: right">http://imcited.com/c/<%= url %></a></p>
+<hr class="">
+<h3><%= locals.statement %></h3>
+<hr class="noBottom">
+
+    <ol>
+  <%  for(var i=0; i<results.length; i++) { %>
+	<li>
+	    <div class="row">
+		<div class="span6">
+		    <p><%= results[i].text %></p>
+		</div>
+		<div class="span3">
+		    <ul>
+			<li><em>title</em> <%= results[i].title %></li>
+			<li><em>link</em> <a href="<%= results[i].url %>"><%= results[i].displayLink %></a></li>
+		    </ul>
+	    </div>
+        </li>
+  <%  } %>
+    </ol>
+<%  } else { %>
+    <p style="text-align: center" class="emptySection" >You haven&rsquo;t added any citations yet...</p>
+<% } %>
+
+</div>

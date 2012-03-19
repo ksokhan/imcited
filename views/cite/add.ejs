@@ -1,1 +1,32 @@
-A form
+<h2>Add a Source</h2>
+<hr />
+
+<form id="addSource" action="#post" class="form-horizontal addSource">
+<fieldset>
+	<div class="row">
+		<label class="span2" for="citationUrl">Website URL</label>
+		<div class="span6">
+			<input type="url" class="span4" id="citationUrl" placeholder="http://">
+			<p class="help-block">What is the URL Address of your citation?</p>
+		</div>
+	</div>
+	<div class="row">
+		<label class="span2" for="citationTitle">Title</label>
+		<div class="span6">
+			<input type="text" class="span4" id="citationTitle" placeholder="">
+			<p class="help-block">What is the title of the article, blog, or website?</p>
+		</div>
+	</div>
+	<div class="row">
+		<label class="span2" for="citationText">Citation Text</label>
+		<div class="span6">
+			<textarea class="span6" id="citationText" placeholder=""></textarea>
+			<p class="help-block">Enter a snippet of text that is relevant to citation (maximum 240 characters).</p>
+		</div>
+	</div>
+	<div class="row">
+		<input type="submit" class="btn btn-large offset2" value="Add Citation"> &nbsp;
+	</div>
+</fieldset>
+
+</form>

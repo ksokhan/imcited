@@ -1,0 +1,27 @@
+<%  if (results != undefined && results.length > 0) { %>
+<a href="#" class="btn btn-primary publishCitation" id="publishCitation">Create Citation</a>
+<h2><span class="citationNum"><%= results.length %></span> Citations</h2>
+<hr class="noBottom">
+    <ol>
+  <%  for(var i=0; i<results.length; i++) { %>
+	<li>
+		<div class="actions">
+			<a href="#" title="Remove Item" rel="<%= i %>" class="btn btn-danger removeCitation preventDefault">Remove Item</a>
+			<a href="<%= results[i].url %>" target="_blank" class="btn" title="Visit full article">Visit Full Article</a>
+		</div>
+	    <div class="row">
+		<div class="span6">
+		    <p><%= results[i].text %></p>
+		</div>
+		<div class="span3">
+		    <ul>
+			<li><em>title</em> <%= results[i].title %></li>
+			<li><em>link</em> <a href="<%= results[i].url %>"><%= results[i].displayLink %></a></li>
+		    </ul>
+	    </div>
+        </li>
+  <%  } %>
+    </ol>
+<%  } else { %>
+    <p style="text-align: center" class="emptySection" >You haven&rsquo;t added any citations yet...</p>
+<% } %>
